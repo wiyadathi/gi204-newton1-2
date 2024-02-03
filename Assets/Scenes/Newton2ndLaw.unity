@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 40570976}
   - component: {fileID: 40570975}
   - component: {fileID: 40570974}
+  - component: {fileID: 40570979}
   m_Layer: 0
   m_Name: Cube5
   m_TagString: Untagged
@@ -256,6 +257,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &40570979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40570973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39b0fb3ac4e70489e2779f6bcb111a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  mass: 0
+  acceleration: 0
 --- !u!1 &253361970
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +354,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 253361973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 40570979}
+        m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
+        m_MethodName: SetAcceleration350
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &253361973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1704976497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 40570979}
+        m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
+        m_MethodName: SetAcceleration250
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1704976497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1768,7 +1808,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2147254368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 40570979}
+        m_TargetAssemblyTypeName: AddForce, Assembly-CSharp
+        m_MethodName: SetAcceleration300
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2147254368
 MonoBehaviour:
   m_ObjectHideFlags: 0
