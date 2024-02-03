@@ -33,6 +33,4 @@ public class AddForce : MonoBehaviour
         acceleration = 350;
         CalculateForce();
     }
-
-
 }
