@@ -2,13 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class AddForce : MonoBehaviour
 {
     [SerializeField] float force;
     [SerializeField] float mass;
     [SerializeField] float acceleration;
-    
+    private Vector3 startPos;
+
+    private void Start()
+    {
+        startPos = transform.position;
+    }
+
     void CalculateForce()
     {
         mass = GetComponent<Rigidbody>().mass;
@@ -32,5 +39,10 @@ public class AddForce : MonoBehaviour
     {
         acceleration = 350;
         CalculateForce();
+    }
+    
+    public void ResetPos()
+    {
+        transform.position = startPos;
     }
 }
